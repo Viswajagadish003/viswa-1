@@ -38,11 +38,11 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- MySQL Driver (corrected version) -->
+        <!-- ✅ MySQL Driver (valid version) -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.2.0</version>
+            <version>8.0.33</version>
             <scope>runtime</scope>
         </dependency>
 
@@ -75,7 +75,7 @@
 
     <build>
         <plugins>
-            <!-- Compiler plugin for Java 17 -->
+            <!-- Java 17 compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -87,7 +87,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Spring Boot Maven plugin -->
+            <!-- Spring Boot Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
