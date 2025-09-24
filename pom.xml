@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -18,7 +19,7 @@
     <packaging>war</packaging>
 
     <name>demo</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Demo Spring Boot project ready for Render deployment</description>
 
     <properties>
         <java.version>17</java.version>
@@ -41,6 +42,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>8.1.1</version>
             <scope>runtime</scope>
         </dependency>
 
@@ -56,7 +58,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <!-- Tomcat (provided, since packaging is WAR) -->
+        <!-- Tomcat (provided, WAR packaging) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
@@ -73,7 +75,7 @@
 
     <build>
         <plugins>
-            <!-- Compiler plugin -->
+            <!-- Compiler plugin for Java 17 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -85,7 +87,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Spring Boot plugin -->
+            <!-- Spring Boot Maven plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
