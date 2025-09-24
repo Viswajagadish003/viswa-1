@@ -38,11 +38,11 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- MySQL Driver (version explicitly added!) -->
+        <!-- MySQL Driver (corrected version) -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.1.1</version>
+            <version>8.2.0</version>
             <scope>runtime</scope>
         </dependency>
 
